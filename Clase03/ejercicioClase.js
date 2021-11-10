@@ -31,19 +31,29 @@
 //     console.log(`3*${numbers[i]}=${3*numbers[i]}`);
 // }
 
-const tablasMultiplicar = (numero)=>{
-    console.log(`*************`)
-    console.log(`Tabla del ${numero}`)
-    console.log(`*************`)
+// const tablasMultiplicar = (numero)=>{
+//     console.log(`*************`)
+//     console.log(`Tabla del ${numero}`)
+//     console.log(`*************`)
 
-    let salida = "";
-    for(let i=0;i<=100;i++){
-        let resultado = numero * i;
-        salida += `${numero} * ${i} = ${resultado}\n`
-    }
-    return salida
-}
+//     let salida = "";
+//     for(let i=0;i<=100;i++){
+//         let resultado = numero * i;
+//         salida += `${numero} * ${i} = ${resultado}\n`
+//     }
+//     return salida
+// }
+
+// for(let i=1;i<=10;i++){
+//     console.log(tablasMultiplicar(i))
+// }
 
 for(let i=1;i<=10;i++){
-    console.log(tablasMultiplicar(i))
+    console.log(`**************`)
+    console.log(`Tabla del ${i}`)
+    console.log(`**************`)
+    for(let j=1;j<=10;j++){
+        let resultado = i * j
+        console.log(`${i} * ${j} = ${resultado}`)
+    }
 }
