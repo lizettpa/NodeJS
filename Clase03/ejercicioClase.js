@@ -48,12 +48,18 @@
 //     console.log(tablasMultiplicar(i))
 // }
 
-for(let i=1;i<=10;i++){
-    console.log(`**************`)
-    console.log(`Tabla del ${i}`)
-    console.log(`**************`)
-    for(let j=1;j<=10;j++){
-        let resultado = i * j
-        console.log(`${i} * ${j} = ${resultado}`)
+// for(let i=1;i<=10;i++){
+//     console.log(`**************`)
+//     console.log(`Tabla del ${i}`)
+//     console.log(`**************`)
+//     for(let j=1;j<=10;j++){
+//         let resultado = i * j
+//         console.log(`${i} * ${j} = ${resultado}`)
+//     }
+// }
+
+for(let i=5;i<=10;i++){
+    for(let j=0;j<=100;j+=10){
+        console.log(`${i} * ${j} = ${i*j}`)
     }
 }
