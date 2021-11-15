@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/icon.ico" type="image/ico">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <!--My Styles-->
+    <link rel="stylesheet" href="./assets/style.css">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <title>MathTools</title>
+</head>
+<body>
+    <!--My Code-->
+    <!--NavBar-->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a class="navbar-brand d-flex flex-row justify-content-start" href="index.html">
+                <div class="custom-div">
+                    <img class="custom-img" src="./images/logo.png" alt="MathTools">
+                </div>
+                <span class=""></span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto sticky-top">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="areas.html">Áreas</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <!--CardTabs-->
+        <section>
+            <div class="d-flex justify-content-center mt-3">
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-secondary" href="#cilindro">Cilindro</button>
+                    <button type="button" class="btn btn-secondary" href="#esfera">Esfera</button>
+                    <button type="button" class="btn btn-secondary" href="#cubo">Cubo</button>
+                  </div>
+            </div>
+            <!--cilindro-->
+            <div class="container d-flex justify-content-center mt-3">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row no-gutters">
+                      <div class="col-md-4 align-content-center d-flex">
+                        <img class="custom-imgCard" id="cilindro" src="./images/cilindro.jpg" alt="Cilindro">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body mx-3">
+                          <h5 class="card-title">Área Cilindro</h5>
+                          <form action="http://localhost:8080" method="GET">
+                            <div class="form-group">
+                                <label for="radio">Radio</label>
+                                <input id="radio" name="radio" type="text" class="form-control" value="">
+                            </div>
+                            <div class="form-group">
+                                <label for="altura">Altura</label>
+                                <input id="altura" name="altura" type="text" class="form-control" value="">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Calcular área</button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <!--esfera-->
+            <div class="container d-flex justify-content-center mt-3">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row no-gutters">
+                      <div class="col-md-4 align-content-center d-flex">
+                        <img class="custom-imgCard" id="esfera" src="./images/esfera.png" alt="Esfera">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body mx-3">
+                          <h5 class="card-title">Área Esfera</h5>
+                          <form>
+                            <div class="form-group">
+                                <label for="radio">Radio</label>
+                                <input id="radio" name=radio type="text" class="form-control" value="">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Calcular área</button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <!--cubo--> 
+            <div class="container d-flex justify-content-center mt-3">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row no-gutters">
+                      <div class="col-md-4 align-content-center d-flex">
+                        <img class="custom-imgCard" id="cubo" src="./images/Cubo.jpg" alt="Esfera">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body mx-3">
+                          <h5 class="card-title">Área Cubo</h5>
+                          <form>
+                            <div class="form-group">
+                              <label for="arista">Arista</label>
+                              <input id="arista" name="arista" type="text" class="form-control" value="">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Calcular área</button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </section>
+    </main>
+    <!--Script de Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+</body>
+</html>

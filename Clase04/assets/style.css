@@ -1,0 +1,71 @@
+body{
+    background-image: url('../images/fondo.png');
+    background-repeat: repeat;
+    background-size: auto;
+}
+/*Animation*/
+.anim-typewriter {
+    animation: typewriter 3s steps(23) 1s 1 normal both,
+    blinkTextCursor 500ms steps(23) infinite normal;
+}
+@keyframes typewriter {
+    from {
+          width: 0;
+    }
+    to {
+          width: 9.2em;
+    }
+}
+@keyframes blinkTextCursor {
+    from {
+          border-right-color: rgba(255, 255, 255, 0.75);
+    }
+    to {
+          border-right-color: transparent;
+    }
+}
+.line {
+    width: 16em;
+    height: 5.5rem;
+    border-right: 0.1rem solid rgba(255, 255, 255, 0.75);
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+    font-family: 'VT323', monospace;
+    font-size: 5rem;
+    color:#FFA400;
+}
+.font-custom {
+    font-family: 'Anonymous Pro', monospace;
+}
+.custom-img{
+    width: 8%;
+}
+.custom-div{
+    width: 30rem;
+}
+.container-custom{
+    width: 100vw; 
+    height: 30vh;
+}
+.custom-welcomeText{
+    width: 80vw;
+    height: 50vh;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.custom-p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+    color: aliceblue;
+}
+.custom-p-span{
+    color: #FFA400;
+}
+
+/* ##### areas #####*/
+.custom-imgCard{
+    height: 50%;
+    align-items: flex-end;
+    margin-top: 50%;
+    margin-left: 10%;
+}
