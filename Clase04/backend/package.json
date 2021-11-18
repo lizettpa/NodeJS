@@ -1,0 +1,16 @@
+{
+  "name": "backend",
+  "version": "0.0.1",
+  "description": "Este es un proyecto para comportarse como un servidor http y servir calculos con respecto a las áreas de algunas figuras geométricas",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lizett Pabon",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "nodemon": "^2.0.15"
+  }
+}
